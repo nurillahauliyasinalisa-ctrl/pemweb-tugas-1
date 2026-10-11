@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+
+    <nav>
+        <a href="profile.html">Profil</a> | 
+        <a href="about-me.html">Tentang Saya</a> | 
+        <a href="educations.html">Pendidikan</a> | 
+        <a href="course-schedule.html">Jadwal Kuliah</a> | 
+        <a href="hobbies.html">Hobi</a> | 
+        <a href="form.html">Formulir</a> | 
+        <a href="table1.html">Tabel 1</a> | 
+        <a href="table2.html">Tabel 2</a>
+    </nav>
+    <hr>
+
+    <h3>Formulir Pendaftaran</h3>
+
+    <form action="#" method="post">
+        <p>
+            <label>Nama Lengkap:</label><br>
+            <input type="text" name="nama" value="Alisa Nurillah Auliyasin" placeholder="Masukkan nama">
+        </p>
+        <p>
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="nama@email.com">
+        </p>
+        <p>
+            <label>Password:</label><br>
+            <input type="password" name="password">
+        </p>
+        <p>
+            <label>Umur:</label><br>
+            <input type="number" name="umur" value="19">
+        </p>
+        <p>
+            <label>Tanggal Lahir:</label><br>
+            <input type="date" name="tanggal_lahir" value="2007-10-28">
+        </p>
+        <p>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="pria" name="jk" value="Laki-laki">
+            <label for="pria">Laki-laki</label><br>
+            <input type="radio" id="wanita" name="jk" value="Perempuan" checked>
+            <label for="wanita">Perempuan</label>
+        </p>
+        <p>
+            <label>Hobi:</label><br>
+            <input type="checkbox" id="ps" name="hobi" value="Public Speaking" checked>
+            <label for="ps">Public Speaking</label><br>
+            <input type="checkbox" id="diplomasi" name="hobi" value="Diplomasi" checked>
+            <label for="diplomasi">Diplomasi</label><br>
+            <input type="checkbox" id="kamera" name="hobi" value="Tampil Kamera" checked>
+            <label for="kamera">Tampil depan kamera</label>
+        </p>
+        <p>
+            <label>Jurusan:</label><br>
+            <select name="jurusan">
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="Sistem Informasi" selected>Sistem Informasi</option>
+                <option value="Sastra Inggris">Sastra Inggris</option>
+                <option value="Informatika">Informatika</option>
+            </select>
+        </p>
+        <p>
+            <label>Alamat:</label><br>
+            <textarea name="alamat" rows="4" cols="30" placeholder="Masukkan alamat"></textarea>
+        </p>
+        <p>
+            <label>Foto:</label><br>
+            <input type="file" name="foto">
+        </p>
+        <p>
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+
+</body>
+</html>
