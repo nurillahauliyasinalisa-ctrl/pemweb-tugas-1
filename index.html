@@ -3,12 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Profil Mahasiswa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffe5ec 0%, #f0e6ff 100%);
+            color: #4a2e35;
+            margin: 0;
+            padding: 30px;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 15px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(219, 112, 147, 0.2);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        nav a {
+            color: #8a2be2;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff1493;
+            background-color: #ffe6f2;
+            border-radius: 8px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(186, 85, 211, 0.15);
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            border: 2px solid #ffd1dc;
+        }
+        h1 {
+            color: #c71585;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #8a2be2;
+            border-bottom: 2px solid #ffb6c1;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .profile-img {
+            width: 170px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 4px solid #ff69b4;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+            margin-bottom: 15px;
+        }
+        mark {
+            background-color: #ffb6c1;
+            color: #4a2e35;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- NAVIGASI -->
+    <!-- NAVIGASI PERPINDAHAN HALAMAN -->
     <nav>
-        <a href="profile.html">Profil</a> | 
+        <a href="index.html">Profil</a> | 
         <a href="about-me.html">Tentang Saya</a> | 
         <a href="educations.html">Pendidikan</a> | 
         <a href="course-schedule.html">Jadwal Kuliah</a> | 
@@ -17,16 +83,18 @@
         <a href="table1.html">Tabel 1</a> | 
         <a href="table2.html">Tabel 2</a>
     </nav>
-    <hr>
 
-    <h1>Profil Mahasiswa</h1>
-    
-    <img src="foto.jpg" alt="Foto Alisa Nurillah Auliyasin" width="160">
+    <div class="container">
+        <h1>Profil Mahasiswa</h1>
+        
+        <!-- PANGGIL FOTO DENGAN NAMA foto.jpg -->
+        <img src="foto.jpg" alt="Foto Alisa Nurillah Auliyasin" class="profile-img">
 
-    <h3>Data Diri</h3>
-    <p>Nama saya <b>Alisa Nurillah Auliyasin</b>. Saya adalah mahasiswa <i>Sistem Informasi</i> dan <i>Sastra Inggris</i>.</p>
-    <p>Saya sedang mempelajari <b>HTML</b>, <b>CSS</b>, dan <b>JavaScript</b>.</p>
-    <p>Target saya adalah menjadi <mark>Web Developer & Professional Communicator</mark>.</p>
+        <h3>Data Diri</h3>
+        <p>Nama saya <b>Alisa Nurillah Auliyasin</b>. Saya adalah mahasiswa <i>Sistem Informasi</i> dan <i>Sastra Inggris</i>.</p>
+        <p>Saya sedang mempelajari <b>HTML</b>, <b>CSS</b>, dan <b>JavaScript</b>.</p>
+        <p>Target saya adalah menjadi <mark>Web Developer & Professional Communicator</mark>.</p>
+    </div>
 
 </body>
 </html>
