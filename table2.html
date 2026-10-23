@@ -2,75 +2,134 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Jadwal Laboratorium Komputer</title>
+    <title>Jadwal Laboratorium</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffe5ec 0%, #f0e6ff 100%);
+            color: #4a2e35;
+            margin: 0;
+            padding: 30px;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(219, 112, 147, 0.2);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        nav a {
+            color: #8a2be2;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 12px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff1493;
+            background-color: #ffe6f2;
+            border-radius: 8px;
+        }
+        .container {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(186, 85, 211, 0.15);
+            max-width: 850px;
+            margin: 0 auto;
+            border: 2px solid #ffd1dc;
+            overflow-x: auto;
+        }
+        h2 {
+            color: #c71585;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #d8bfd8;
+            padding: 10px;
+        }
+        th {
+            background-color: #8a2be2;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #fff0f5;
+        }
+    </style>
 </head>
 <body>
 
     <nav>
-        <a href="profile.html">Profil</a> | 
+        <a href="index.html">Profil</a> | 
         <a href="about-me.html">Tentang Saya</a> | 
         <a href="educations.html">Pendidikan</a> | 
         <a href="course-schedule.html">Jadwal Kuliah</a> | 
         <a href="hobbies.html">Hobi</a> | 
         <a href="form.html">Formulir</a> | 
         <a href="table1.html">Tabel 1</a> | 
-        <a href="table2.html">Tabel 2</a>
+        <a href="table2.html">Tabel 2</a> | 
+        <a href="table3.html">Tabel 3</a>
     </nav>
-    <hr>
 
-    <h3>Jadwal Laboratorium Komputer</h3>
+    <div class="container">
+        <h2>Jadwal Laboratorium Komputer</h2>
 
-    <table border="1" cellpadding="5" cellspacing="0">
-        <tr>
-            <th rowspan="2">Hari</th>
-            <th colspan="2">Pagi</th>
-            <th colspan="2">Siang</th>
-            <th rowspan="2">Keterangan</th>
-        </tr>
-        <tr>
-            <th>08:00 - 10:00</th>
-            <th>10:00 - 12:00</th>
-            <th>13:00 - 15:00</th>
-            <th>15:00 - 17:00</th>
-        </tr>
-        <tr>
-            <td rowspan="2">Senin</td>
-            <td>Web 1</td>
-            <td>Web 2</td>
-            <td colspan="2">Praktikum Basis Data</td>
-            <td rowspan="2">Normal</td>
-        </tr>
-        <tr>
-            <td colspan="2">Praktikum Pemrograman</td>
-            <td>Jaringan</td>
-            <td>Jaringan</td>
-        </tr>
-        <tr>
-            <td>Selasa</td>
-            <td colspan="2">Seminar</td>
-            <td>Mobile</td>
-            <td>Mobile</td>
-            <td>Seminar Pagi</td>
-        </tr>
-        <tr>
-            <td>Rabu</td>
-            <td>Web</td>
-            <td>Web</td>
-            <td colspan="2">Maintenance Laboratorium</td>
-            <td>Maintenance</td>
-        </tr>
-        <tr>
-            <td>Kamis</td>
-            <td>Algoritma</td>
-            <td>Algoritma</td>
-            <td colspan="2">Praktikum Jaringan</td>
-            <td>Normal</td>
-        </tr>
-        <tr>
-            <td colspan="5"><b>Catatan:</b> Jadwal dapat berubah sewaktu-waktu.</td>
-            <td>-</td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <th rowspan="2">Hari</th>
+                <th colspan="2">Pagi</th>
+                <th colspan="2">Siang</th>
+                <th rowspan="2">Keterangan</th>
+            </tr>
+            <tr style="background-color: #9370db;">
+                <th>08:00 - 10:00</th>
+                <th>10:00 - 12:00</th>
+                <th>13:00 - 15:00</th>
+                <th>15:00 - 17:00</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Senin</td>
+                <td>Web 1</td>
+                <td>Web 2</td>
+                <td colspan="2">Praktikum Basis Data</td>
+                <td rowspan="2">Normal</td>
+            </tr>
+            <tr>
+                <td colspan="2">Praktikum Pemrograman</td>
+                <td>Jaringan</td>
+                <td>Jaringan</td>
+            </tr>
+            <tr>
+                <td>Selasa</td>
+                <td colspan="2">Seminar</td>
+                <td>Mobile</td>
+                <td>Mobile</td>
+                <td>Seminar Pagi</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>Web</td>
+                <td>Web</td>
+                <td colspan="2">Maintenance Laboratorium</td>
+                <td>Maintenance</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>Algoritma</td>
+                <td>Algoritma</td>
+                <td colspan="2">Praktikum Jaringan</td>
+                <td>Normal</td>
+            </tr>
+        </table>
+    </div>
 
 </body>
 </html>
