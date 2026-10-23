@@ -3,56 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <title>Riwayat Pendidikan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffe5ec 0%, #f0e6ff 100%);
+            color: #4a2e35;
+            margin: 0;
+            padding: 30px;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(219, 112, 147, 0.2);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        nav a {
+            color: #8a2be2;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 12px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff1493;
+            background-color: #ffe6f2;
+            border-radius: 8px;
+        }
+        .container {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(186, 85, 211, 0.15);
+            max-width: 700px;
+            margin: 0 auto;
+            border: 2px solid #ffd1dc;
+        }
+        h2 {
+            color: #c71585;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #d8bfd8;
+            padding: 12px;
+        }
+        th {
+            background-color: #8a2be2;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #fff0f5;
+        }
+    </style>
 </head>
 <body>
 
     <nav>
-        <a href="profile.html">Profil</a> | 
+        <a href="index.html">Profil</a> | 
         <a href="about-me.html">Tentang Saya</a> | 
         <a href="educations.html">Pendidikan</a> | 
         <a href="course-schedule.html">Jadwal Kuliah</a> | 
         <a href="hobbies.html">Hobi</a> | 
         <a href="form.html">Formulir</a> | 
         <a href="table1.html">Tabel 1</a> | 
-        <a href="table2.html">Tabel 2</a>
+        <a href="table2.html">Tabel 2</a> | 
+        <a href="table3.html">Tabel 3</a>
     </nav>
-    <hr>
 
-    <h2>Riwayat Pendidikan</h2>
+    <div class="container">
+        <h2>Riwayat Pendidikan</h2>
 
-    <table border="1" cellpadding="6" cellspacing="0">
-        <caption style="margin-bottom: 8px;"><b>Riwayat Pendidikan</b></caption>
-        <tr>
-            <th>No</th>
-            <th>Jenjang</th>
-            <th>Nama Sekolah</th>
-            <th>Tahun</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>SD</td>
-            <td>SDN Gandamanah</td>
-            <td>2013 - 2019</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>SMP</td>
-            <td>SMP Muhammadiyah Subang</td>
-            <td>2019 - 2022</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>SMA</td>
-            <td>SMA Muhammadiyah Subang</td>
-            <td>2022 - 2025</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>S1</td>
-            <td>Universitas Mandiri & Universitas Terbuka Bandung</td>
-            <td>2025 - Sekarang</td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Jenjang</th>
+                <th>Nama Sekolah</th>
+                <th>Tahun</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>SD</td>
+                <td>SDN Gandamanah</td>
+                <td>2013 - 2019</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SMP</td>
+                <td>SMP Muhammadiyah Subang</td>
+                <td>2019 - 2022</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SMA</td>
+                <td>SMA Muhammadiyah Subang</td>
+                <td>2022 - 2025</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>S1</td>
+                <td>Universitas Mandiri & Universitas Terbuka Bandung</td>
+                <td>2025 - Sekarang</td>
+            </tr>
+        </table>
+    </div>
 
 </body>
 </html>
